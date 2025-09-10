@@ -3,7 +3,7 @@ class TeamBrain(nn.Module):
     def __init__(self):
         super().__init__()
         self.net = nn.Sequential(
-            nn.Linear(729 * 32, 1024),
+            nn.Linear(730 * 32, 1024),
             nn.GELU(),
             nn.Linear(1024, 2048),
             nn.GELU(),
